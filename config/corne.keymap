@@ -13,7 +13,7 @@
 #define WHRML(k2,k3,k4) &ht LALT k2  &ht LGUI k3  &ht LCTRL k4
 #define WHRMR(k1,k2,k3) &ht RCTRL k1  &ht RGUI k2  &ht RALT k3
 
-#define WIN 0
+#define BAS 0
 #define RIG 1
 #define LEF 2
 #define TRI 3
@@ -30,13 +30,23 @@
             global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
+        gqt: global-quick-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_QUICK_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <RIG LEF>;
-            then-layer = <TRI>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -53,7 +63,7 @@
    &trans &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &trans
    &trans &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp ENTER &trans
    &trans &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp BACKSPACE &trans
-                  &kp LSHIFT &lt LEF DEL &kp ALT   &kp TAB &lt RIG SPACE &kp LCTRL
+                  &kp LSHIFT &gqt LEF DEL &kp ALT   &kp TAB &lt RIG SPACE &kp LCTRL
                 >;
             };
 
