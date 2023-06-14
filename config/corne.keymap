@@ -74,8 +74,8 @@
         left_layer {
 // -----------------------------------------------------------------------------------------
 // | X  |  !  |  "  |  £  |  $  |  %  |   |  ^  |  &  |  *  |  -  |  _  | X |
-// | X  |  `  |  @  |  '  |  #  |     |   |  (  |  )  |  [  |  ]  |  :  | X |
-// | X  | "|" |  \  |     |     |     |   |  +  |  =  |  {  |  }  |  /  | X |
+// | X  |  `  |  @  |  '  |  #  |     |   |  LP  |  RP  |  LSP  |  RSP  |  :  | X |
+// | X  | "|" |  \  |     |     |     |   |  +  |  =  |  LCP  |  RCP  |  /  | X |
 //                    |SHIFT|  X  | SPC |   | ENT |  X  | ALT |
             bindings = <
    &trans  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
