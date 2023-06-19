@@ -51,7 +51,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
     &trans  &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER    &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &kp LSHIFT &lt LEF DEL  &kp ALT    &kp TAB  &lt RIG SPACE &kp LCTRL
+                                 &trans &lt LEF DEL  &kp ALT    &kp TAB  &lt RIG SPACE &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -80,7 +80,7 @@
     &trans  &kp EXCL   &kp DQT    &kp DQT    &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  '       │ -        │  =       │ ;        │  #       │   │   /      │   [      │  {       │  (       │     :    │
-    &trans  &kp SQT   &kp MINUS  &kp EQUAL  &kp SEMI     &kp NUHS      &kp FSLH   &kp LBKT   &kp LBRC   &kp LPAR   &kp COLON    &trans
+    &trans  &kp SQT   &kp MINUS  &kp EQUAL  &kp SEMI     &kp NUHS      &kp FSLH   &kp LBKT   &kp LBRC   &kp LPAR   &kp COLON     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│   @      │ _        │  +       │  │       │          │   │    \     │   ]      │  }       │  )       │   ?      │
     &trans  &kp AT     &kp UNDER  &kp PLUS   &kp PIPE    &trans         &kp BSLH  &kp RBKT   &kp RBRC   &kp RPAR  &kp QMARK     &trans
